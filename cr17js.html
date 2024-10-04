@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cristiano Ronaldo Accomplishments</title>
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+            scroll-behavior: smooth;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            padding: 40px 0;
+            text-align: center;
+            color: #fff;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            animation: fadeIn 1s;
+        }
+
+        header p {
+            font-size: 1.2em;
+            opacity: 0.8;
+            animation: fadeIn 1s 0.5s;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #333;
+            padding: 15px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            transition: background-color 0.3s;
+        }
+
+        nav a {
+            color: #fff;
+            padding: 10px 20px;
+            margin: 0 10px;
+            font-weight: 500;
+            font-size: 1.1em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #555;
+            border-radius: 5px;
+            transform: scale(1.05);
+        }
+
+        /* Section */
+        section {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+
+        section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        section h2 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #2c5364;
+        }
+
+        section p {
+            font-size: 1.1em;
+            text-align: center;
+            margin-bottom: 30px;
+            color: #666;
+        }
+
+        /* Centered Image */
+        .centered-image {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        /* Accomplishments Section */
+        .accomplishments {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 30px;
+        }
+
+        .accomplishment {
+            background-color: #fff;
+            border: none;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            width: 350px;
+        }
+
+        .accomplishment:hover {
+            transform: scale(1.05);
+            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .accomplishment img {
+            border-bottom: 4px solid #2c5364;
+        }
+
+        .accomplishment h3 {
+            font-size: 1.8em;
+            margin: 20px 0;
+            color: #203a43;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .accomplishment p {
+            font-size: 1em;
+            padding: 0 20px;
+            margin-bottom: 20px;
+            color: #666;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #111;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 0.9em;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: 50px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5em;
+            }
+
+            section h2 {
+                font-size: 2em;
+            }
+
+            nav a {
+                font-size: 1em;
+            }
+
+            .accomplishment {
+                width: 90%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            nav {
+                padding: 10px 0;
+            }
+
+            nav a {
+                font-size: 0.9em;
+            }
+
+            .accomplishment {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Cristiano Ronaldo</h1>
+        <p>Achievements and Accomplishments</p>
+    </header>
+
+    <nav>
+        <a href="#early">Early Career</a>
+        <a href="#awards">Major Awards</a>
+        <a href="#milestones">Career Milestones</a>
+    </nav>
+
+    <section id="early">
+        <h2>Early Career</h2>
+        <div class="centered-image">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSk3c5CWh0SLi-fjlJRpuWZCLVG5EckrddKlg&s" alt="Cristiano Ronaldo Early Career Image" style="max-width: 300px; border-radius: 10px;">
+        </div>
+        <p>Cristiano Ronaldo began his career with Sporting CP before moving to Manchester United in 2003. His rapid development at the club saw him gain recognition as one of the most talented young footballers in the world.</p>
+    </section>
+
+    <section id="awards">
+        <h2>Major Awards</h2>
+        <div class="accomplishments">
+            <div class="accomplishment">
+                <a href="https://www.theguardian.com/football/2017/dec/07/cristiano-ronaldo-ballon-d-or-equal-messi" target="_blank">
+                    <img src="https://e00-marca.uecdn.es/assets/multimedia/imagenes/2019/10/28/15722779537328.jpg" alt="Ballon d'Or">
+                </a>
+                <h3>Ballon d'Or</h3>
+                <p>Won the Ballon d'Or 5 times (2008, 2013, 2014, 2016, 2017)</p>
+            </div>
+            <div class="accomplishment">
+                <a href="https://www.theguardian.com/football/2017/jan/09/cristiano-ronaldo-wins-worlds-best-player-fifa-awards" target="_blank">
+                    <img src="https://editorial.uefa.com/resources/0235-0e95ffbb9dd1-368d1310f96c-1000/cristiano_ronaldo_real_madrid_portugal_.jpeg" alt="FIFA World Player of the Year">
+                </a>
+                <h3>FIFA World Player of the Year</h3>
+                <p>Named FIFA World Player of the Year multiple times</p>
+            </div>
+            <div class="accomplishment">
+                <a href="https://www.transfermarkt.co.in/cristiano-ronaldo/erfolge/spieler/8198" target="_blank">
+                    <img src="https://editorial.uefa.com/resources/0250-0c5117b83a72-956867b9220c-1000/cristiano_ronaldo_celebrates_his_fifth_title.jpeg" alt="UEFA Champions League">
+                </a>
+                <h3>UEFA Champions League Titles</h3>
+                <p>5-time Champions League winner (2008, 2014, 2016, 2017, 2018)</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="milestones">
+        <h2>Career Milestones</h2>
+        <div class="accomplishments">
+            <div class="accomplishment">
+                <a href="https://www.transfermarkt.co.in/cristiano-ronaldo/erfolge/spieler/8198" target="_blank">
+                    <img src="https://i.ytimg.com/vi/eePOFXlX5Pg/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLB9BpNX9XDniT2_TC2JmaE4fi2_Sw" alt="900 Career Goals">
+                </a>
+                <h3>900+ Career Goals</h3>
+                <p>One of the highest-scoring players in football history</p>
+            </div>
+            <div class="accomplishment">
+                <a href="https://www.transfermarkt.co.in/cristiano-ronaldo/erfolge/spieler/8198" target="_blank">
+                    <img src="https://ss-i.thgim.com/public/incoming/o70ry/article68185543.ece/alternates/LANDSCAPE_1200/GettyImages-545932232_1_.jpg" alt="UEFA Euro 2016">
+                </a>
+                <h3>International Success</h3>
+                <p>Winner of UEFA Euro 2016 and UEFA Nations League 2019 with Portugal</p>
+            </div>
+            <div class="accomplishment">
+                <a href="https://www.theguardian.com/football/2009/apr/03/cristiano-ronaldo-real-madrid-transfer" target="_blank">
+                    <img src="https://editorial.uefa.com/resources/01db-0e725e5212d6-62bb312f891a-1000/cristiano_ronaldo_meets_his_new_fans.jpeg" alt="Record Transfers">
+                </a>
+                <h3>Record Transfers</h3>
+                <p>Most expensive transfer in football history at the time (2009: £80M to Real Madrid)</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; kalyanram. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Sticky navbar background color change on scroll
+        window.addEventListener("scroll", function () {
+            const nav = document.querySelector("nav");
+            if (window.scrollY > 50) {
+                nav.style.backgroundColor = "#222";
+            } else {
+                nav.style.backgroundColor = "transparent";
+            }
+        });
+
+        // Reveal sections on scroll
+        const sections = document.querySelectorAll("section");
+
+        function revealSection() {
+            const triggerBottom = window.innerHeight * 0.85;
+
+            sections.forEach(section => {
+                const sectionTop = section.getBoundingClientRect().top;
+                if (sectionTop < triggerBottom) {
+                    section.classList.add("visible");
+                }
+            });
+        }
+
+        window.addEventListener("scroll", revealSection);
+        window.addEventListener("load", revealSection); // Initial check
+    </script>
+</body>
+
+</html>
